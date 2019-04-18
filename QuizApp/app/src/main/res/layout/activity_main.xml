@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<LinearLayout
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Math Quiz"
+        android:textSize="56sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"/>
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How mutch is ( 5 * 120) ?"
+        android:textSize="20sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="125"
+        android:id="@+id/Q1O1"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+
+    <android.support.v7.widget.AppCompatRadioButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="600"
+    android:id="@+id/Q1O2"
+    android:textSize="30sp"
+    android:padding="8dp"/>
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1200"
+        android:id="@+id/Q1O3"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+</RadioGroup>
+
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which statement's are correct?"
+        android:textSize="20sp"
+        />
+
+    <CheckBox
+        android:id="@+id/Q2O1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50 / 5 = 5"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/Q2O2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10% of 50  = 5"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+    <CheckBox
+        android:id="@+id/Q2O3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 * 50 = 500"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+    <CheckBox
+        android:id="@+id/Q2O4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 * 50 = 250"
+        android:textSize="30sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is this shape called?"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:id="@+id/HexImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+            android:src="@drawable/hexagon"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/Q3Answer"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:background="@android:color/background_light"
+        />
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many sides does the above shape have?"
+        android:textSize="20sp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/Q4O1"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/Q4O2"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/Q4O3"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/Q4O4"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/Q4O5"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/Q4O6"
+            android:textSize="30sp"
+            android:padding="8dp"/>
+    </RadioGroup>
+<Button
+    android:id="@+id/Submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:text="Submit"
+    android:textSize="30sp"/>
+
+</LinearLayout>
+</ScrollView>
