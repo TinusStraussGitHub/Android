@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    >
+
+    <TextView
+        android:id="@+id/BusinessName"
+        android:contentDescription="@string/Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/perfectwaterTitle"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:padding="20dp"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_weight="0"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        >
+
+    <ImageView
+        android:id="@+id/MainImage"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/perfect_water_logo"
+        android:src="@drawable/perfectwater"
+        android:layout_gravity="center"
+        />
+
+        <TextView
+            android:contentDescription="@string/BusinessDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BusinessDescription"
+            android:textColor="#0069c0"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+        android:padding="20dp">
+    <TextView
+        android:contentDescription="@string/ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ContactUs"
+        android:textColor="#424242"
+        android:fontFamily="sans-serif"
+        android:padding="0dp"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:contentDescription="@string/ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ActualContactUs"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="20dp"
+        >
+        <TextView
+            android:contentDescription="@string/AddressHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PhysicalAddress"
+            android:textColor="#424242"
+            android:fontFamily="sans-serif"
+            android:padding="0dp"
+            android:textSize="24sp"/>
+        <TextView
+            android:contentDescription="@string/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ActualAddress"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+
+        <TextView
+            android:contentDescription="@string/HoursHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hours"
+            android:textColor="#424242"
+            android:fontFamily="sans-serif"
+            android:padding="0dp"
+            android:textSize="24sp"/>
+        <TextView
+            android:contentDescription="@string/Hours"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/ActualHours"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

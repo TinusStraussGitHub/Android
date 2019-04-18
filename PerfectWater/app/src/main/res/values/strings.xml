@@ -1,0 +1,17 @@
+<resources>
+    <string name="ActualContactUs">Tel : 013 665 3022 , Email : perfectwater.co.za</string>
+    <string name="ContactUs">Contact Us</string>
+    <string name="perfectwaterTitle">perfectwater</string>
+    <string name="PhysicalAddress">Physical Address</string>
+    <string name="AboutUs">About Us</string>
+    <string name="Address">Address</string>
+    <string name="AddressHeading">Address Heading</string>
+    <string name="Business">Business</string>
+    <string name="app_name">PerfectWater</string>
+    <string name="perfect_water_logo">Perfect Water Logo</string>
+    <string name="ActualAddress">1 MULLER Street Delmas</string>
+    <string name="Hours">Hours</string>
+    <string name="HoursHeading">Hours Heading</string>
+    <string name="ActualHours">8am - 5pm, Monday - Friday</string>
+    <string name="BusinessDescription"> The water supplied is purified through Reverse Osmosis purification, ozonation and deionization processes and offers the cleanest, healthiest solution to drinking water.</string>
+</resources>
