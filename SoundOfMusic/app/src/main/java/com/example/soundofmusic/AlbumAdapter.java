@@ -1,19 +1,27 @@
 package com.example.soundofmusic;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
+
 
 import java.util.ArrayList;
 
 
-public class SongAdapter extends ArrayAdapter<Song> {
+public class AlbumAdapter extends ArrayAdapter<Album> {
+    private Context mycontext;
 
-    public SongAdapter(Activity context, ArrayList<Song> words) {
-        super(context, 0, words);
+    public AlbumAdapter(Activity context, ArrayList<Album> albums) {
+
+        super(context, 0, albums);
+
+        mycontext = context;
     }
 
     @Override
@@ -21,21 +29,30 @@ public class SongAdapter extends ArrayAdapter<Song> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.song_list_item, parent, false);
+                    R.layout.album_list_item, parent, false);
         }
 
-        Song currentSong = getItem(position);
+        final Album currentAlbum = getItem(position);
 
-        TextView positionTextView = (TextView) listItemView.findViewById(R.id.songPosition);
-        positionTextView.setText(currentSong.getPosition());
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.songName);
-        nameTextView.setText(currentSong.getName());
+        Button nameButton = (Button) listItemView.findViewById(R.id.albumName);
+        nameButton.setText(currentAlbum.getName());
 
-        TextView numberTextView = (TextView) listItemView.findViewById(R.id.songArtist);
-        numberTextView.setText(currentSong.getArtist());
+        nameButton.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
+                Globals.currentAlbum = currentAlbum;
+                Intent songIntent = new Intent(getContext(), SongActivity.class);
+                songIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mycontext.startActivity(songIntent);
+            }
+        });
 
-        return listItemView;
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.albumArtist);
+        artistTextView.setText(currentAlbum.getArtist());
+
+              return listItemView;
     }
 
 

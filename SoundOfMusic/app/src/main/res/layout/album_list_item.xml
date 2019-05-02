@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/albumImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/albumimage" />
+    <Button
+        android:id="@+id/albumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/albumArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

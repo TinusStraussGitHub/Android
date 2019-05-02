@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-
-    android:id="@+id/list"
-    android:orientation="vertical"
-     android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
- />
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/navigateToCurrentPlayingFromAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Go to" />
+
+        <TextView
+            android:id="@+id/nowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Now Playing : "
+
+            />
+
+        <TextView
+            android:id="@+id/nowPlayingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Nothing"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/navigateToHomeFromAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Back to Home" />
+    <GridView
+
+        android:id="@+id/list"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="24dp" />
+
+
+</LinearLayout>

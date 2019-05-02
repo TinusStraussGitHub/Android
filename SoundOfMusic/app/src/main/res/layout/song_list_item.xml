@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/player_play" />
+
+    <TextView
+        android:id="@+id/songPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="TextView"
+
+        />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/songArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-
-        <TextView
-            android:id="@+id/textMiwok"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textEnglish"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="TextView" />
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+        android:padding="16dp"
+        android:text="TextView" />
+</LinearLayout>

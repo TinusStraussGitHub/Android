@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">SoundOfMusic</string>
+    <string name="app_name">Sound Of Music</string>
+    <string name="albums">Albums</string>
+    <string name="songs">Songs</string>
+    <string name="all_songs">All Songs</string>
+    <string name="currently_playing">Currently Playing</string>
+    <string name="title_activity_song">Songs</string>
+    <string name="title_activity_all_songs">All Songs</string>
+    <string name="title_activity_song_playing">Currently Playing</string>
 </resources>
