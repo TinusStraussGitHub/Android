@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Delmas Tour Guide</string>
+    <string name="category_Restaurants">Restaurants</string>
+    <string name="category_Attractions">Attractions</string>
+    <string name="category_Shopping">Shopping</string>
+    <string name="category_Events">Events</string>
+    <string name="address_label">Address :</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+    <string name="gps_Label">Coordinates :</string>
+    <string name="gps">Coordinates</string>
+</resources>
